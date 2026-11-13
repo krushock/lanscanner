@@ -1,0 +1,38 @@
+name: LanScan
+options:
+  bundleIdPrefix: com.valeryburtsev
+  deploymentTarget:
+    macOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGN_STYLE: Manual
+    ENABLE_HARDENED_RUNTIME: NO
+    DEAD_CODE_STRIPPING: YES
+targets:
+  LanScan:
+    type: application
+    platform: macOS
+    sources:
+      - path: LanScan
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.valeryburtsev.LanScan
+        PRODUCT_NAME: LanScan
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_APP_SANDBOX: NO
+    info:
+      path: LanScan/Info.plist
+      properties:
+        CFBundleDisplayName: LanScan
+        LSApplicationCategoryType: public.app-category.utilities
+        NSLocalNetworkUsageDescription: LanScan scans your local network to find connected devices and identify them by name, address and manufacturer.
+        NSBonjourServices:
+          - _device-info._tcp
+          - _services._dns-sd._udp
+        NSHumanReadableCopyright: ""

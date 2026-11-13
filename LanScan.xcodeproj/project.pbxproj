@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1024C055E3C7D6EF567B94E6 /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598B302D43EFFABD9AE244D /* NetworkInterface.swift */; };
+		112FDCEEAE405280489F4A58 /* VendorDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD3F1A8D483095F1CC8BD1 /* VendorDatabase.swift */; };
+		26A8C0FA2F6246FE291F92B2 /* NameResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E37D7B634FB790B7E7F0CF /* NameResolver.swift */; };
+		2EF5DAB6A15464A1EAE04EA1 /* ARPTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB1703B5306EF8C720B849 /* ARPTable.swift */; };
+		37AD752F1F4512ECAD9366B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C3D1713681554F0F2DC888 /* Assets.xcassets */; };
+		40D9675CEC2DCAA8E04F382E /* Pinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020C47B7EF44FD20C04678A /* Pinger.swift */; };
+		4E36E4FAC1F559F458AA15E2 /* ScanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2FF6569A5D45F2E9CDAD9 /* ScanModel.swift */; };
+		4EB9DCB278868304A5A74BDC /* DeviceTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918DFA38299B4A9D350E0A20 /* DeviceTable.swift */; };
+		585D2ABF5E453AACC8691DEE /* DHCPListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516DE3F2553AFE57A34D8BF0 /* DHCPListener.swift */; };
+		5AFD787ABE8456C1A2EA5286 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2927164D25A6C08B3C67A9EB /* Device.swift */; };
+		6601554910544F7BDC91781F /* NeighborDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE950E1FF1FB569DA3E77 /* NeighborDiscovery.swift */; };
+		6DC0AF95AC6E569495340427 /* SSDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4A1E69E9FB7A8A22AB6B83 /* SSDP.swift */; };
+		7547C92E50B80417F5FD2E01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD769777596750CCFAAA9F38 /* ContentView.swift */; };
+		91F6C79E4B50DCCA8E7923FD /* DeviceCatalog.json in Resources */ = {isa = PBXBuildFile; fileRef = DD31660C669B73993CD88C19 /* DeviceCatalog.json */; };
+		9C80E9B13D1BB3641FCADAEC /* DeviceCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E570CD8851C320D44DA48A4 /* DeviceCatalog.swift */; };
+		A95822C7C8049BCFBA555FEA /* LanScanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F8511A481484BC5A5A9917 /* LanScanApp.swift */; };
+		AAAA820E1E7B05E856D24C24 /* NetworkScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FEF4AB3DBE9D48CEB56D89 /* NetworkScanner.swift */; };
+		AC7263DAAC8D49975A95B77C /* DNSMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DAD3452A2617580E53184 /* DNSMessage.swift */; };
+		B4F5856D34F0776A275669E9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15425D253B6F35E6651772D /* SettingsView.swift */; };
+		D8E877847F268C9074DB0DD6 /* ScanOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF731A9580E9BD5C37A6BE5 /* ScanOptionsView.swift */; };
+		E640A36B9AFDA232F17024F2 /* Sockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E2943C51F0382F03557068 /* Sockets.swift */; };
+		F134C5BFB0D8781103EC453F /* ScanStatusOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6CF12B1BD2B5A37C7008E7 /* ScanStatusOverlay.swift */; };
+		F77FA67983EB7472DACBEBC9 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB09260CF4EF112F92B171B /* SidebarView.swift */; };
+		F79EBBB1A231BAB6942D2BCF /* Addresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B21BF2C84D50BCB1C8A883C /* Addresses.swift */; };
+		FE7B8359ACB8671B5958D53E /* DeviceInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF7C5BE994987CA874D905 /* DeviceInspector.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AD2FF6569A5D45F2E9CDAD9 /* ScanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanModel.swift; sourceTree = "<group>"; };
+		1FB09260CF4EF112F92B171B /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		26BD3F1A8D483095F1CC8BD1 /* VendorDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorDatabase.swift; sourceTree = "<group>"; };
+		2927164D25A6C08B3C67A9EB /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		516DE3F2553AFE57A34D8BF0 /* DHCPListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHCPListener.swift; sourceTree = "<group>"; };
+		52BA5B78C54A2BEB66AD1605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5598B302D43EFFABD9AE244D /* NetworkInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterface.swift; sourceTree = "<group>"; };
+		56E2943C51F0382F03557068 /* Sockets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sockets.swift; sourceTree = "<group>"; };
+		5F4A1E69E9FB7A8A22AB6B83 /* SSDP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSDP.swift; sourceTree = "<group>"; };
+		67FEF4AB3DBE9D48CEB56D89 /* NetworkScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkScanner.swift; sourceTree = "<group>"; };
+		6E570CD8851C320D44DA48A4 /* DeviceCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCatalog.swift; sourceTree = "<group>"; };
+		72C3D1713681554F0F2DC888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		785DAD3452A2617580E53184 /* DNSMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSMessage.swift; sourceTree = "<group>"; };
+		7B21BF2C84D50BCB1C8A883C /* Addresses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addresses.swift; sourceTree = "<group>"; };
+		7FDF7C5BE994987CA874D905 /* DeviceInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInspector.swift; sourceTree = "<group>"; };
+		86F8511A481484BC5A5A9917 /* LanScanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanScanApp.swift; sourceTree = "<group>"; };
+		8C6CF12B1BD2B5A37C7008E7 /* ScanStatusOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanStatusOverlay.swift; sourceTree = "<group>"; };
+		918DFA38299B4A9D350E0A20 /* DeviceTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTable.swift; sourceTree = "<group>"; };
+		95E37D7B634FB790B7E7F0CF /* NameResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameResolver.swift; sourceTree = "<group>"; };
+		AFEFDB494CD9A2FF64D4131D /* LanScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFB1703B5306EF8C720B849 /* ARPTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPTable.swift; sourceTree = "<group>"; };
+		BD769777596750CCFAAA9F38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C020C47B7EF44FD20C04678A /* Pinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pinger.swift; sourceTree = "<group>"; };
+		D15425D253B6F35E6651772D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DA6AE950E1FF1FB569DA3E77 /* NeighborDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborDiscovery.swift; sourceTree = "<group>"; };
+		DD31660C669B73993CD88C19 /* DeviceCatalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DeviceCatalog.json; sourceTree = "<group>"; };
+		ECF731A9580E9BD5C37A6BE5 /* ScanOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOptionsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		350B39A165C9CEB7EB993C01 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7B21BF2C84D50BCB1C8A883C /* Addresses.swift */,
+				BCFB1703B5306EF8C720B849 /* ARPTable.swift */,
+				516DE3F2553AFE57A34D8BF0 /* DHCPListener.swift */,
+				785DAD3452A2617580E53184 /* DNSMessage.swift */,
+				95E37D7B634FB790B7E7F0CF /* NameResolver.swift */,
+				DA6AE950E1FF1FB569DA3E77 /* NeighborDiscovery.swift */,
+				5598B302D43EFFABD9AE244D /* NetworkInterface.swift */,
+				67FEF4AB3DBE9D48CEB56D89 /* NetworkScanner.swift */,
+				C020C47B7EF44FD20C04678A /* Pinger.swift */,
+				56E2943C51F0382F03557068 /* Sockets.swift */,
+				5F4A1E69E9FB7A8A22AB6B83 /* SSDP.swift */,
+				26BD3F1A8D483095F1CC8BD1 /* VendorDatabase.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5A766DE344BCC1E4535D5CE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFEFDB494CD9A2FF64D4131D /* LanScan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DD2DA2A903064BDD5F062F6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				86F8511A481484BC5A5A9917 /* LanScanApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9C5E0015205BCDFE7EB5939D = {
+			isa = PBXGroup;
+			children = (
+				A9F9920E73ECEF8620ACDB36 /* LanScan */,
+				5A766DE344BCC1E4535D5CE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9F9920E73ECEF8620ACDB36 /* LanScan */ = {
+			isa = PBXGroup;
+			children = (
+				72C3D1713681554F0F2DC888 /* Assets.xcassets */,
+				52BA5B78C54A2BEB66AD1605 /* Info.plist */,
+				7DD2DA2A903064BDD5F062F6 /* App */,
+				350B39A165C9CEB7EB993C01 /* Core */,
+				B8F4998E5BCF20BD99266B20 /* Model */,
+				AC7C9E7D413B509DA96F92F1 /* Resources */,
+				D366136357136150D01DB318 /* Views */,
+			);
+			path = LanScan;
+			sourceTree = "<group>";
+		};
+		AC7C9E7D413B509DA96F92F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD31660C669B73993CD88C19 /* DeviceCatalog.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B8F4998E5BCF20BD99266B20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2927164D25A6C08B3C67A9EB /* Device.swift */,
+				6E570CD8851C320D44DA48A4 /* DeviceCatalog.swift */,
+				0AD2FF6569A5D45F2E9CDAD9 /* ScanModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D366136357136150D01DB318 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD769777596750CCFAAA9F38 /* ContentView.swift */,
+				7FDF7C5BE994987CA874D905 /* DeviceInspector.swift */,
+				918DFA38299B4A9D350E0A20 /* DeviceTable.swift */,
+				ECF731A9580E9BD5C37A6BE5 /* ScanOptionsView.swift */,
+				8C6CF12B1BD2B5A37C7008E7 /* ScanStatusOverlay.swift */,
+				D15425D253B6F35E6651772D /* SettingsView.swift */,
+				1FB09260CF4EF112F92B171B /* SidebarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F34464880E4AA734B67A50B /* LanScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151FDCB582DB24274E50C3B6 /* Build configuration list for PBXNativeTarget "LanScan" */;
+			buildPhases = (
+				A5AA32EA5CCB19CF2F180893 /* Sources */,
+				21CE44D471CD02E6D22AEAB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LanScan;
+			packageProductDependencies = (
+			);
+			productName = LanScan;
+			productReference = AFEFDB494CD9A2FF64D4131D /* LanScan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12208C45F19E5904D7FB7793 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8F34464880E4AA734B67A50B = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = DD2B608AF42852891467E0A4 /* Build configuration list for PBXProject "LanScan" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9C5E0015205BCDFE7EB5939D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5A766DE344BCC1E4535D5CE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F34464880E4AA734B67A50B /* LanScan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21CE44D471CD02E6D22AEAB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AD752F1F4512ECAD9366B8 /* Assets.xcassets in Resources */,
+				91F6C79E4B50DCCA8E7923FD /* DeviceCatalog.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5AA32EA5CCB19CF2F180893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF5DAB6A15464A1EAE04EA1 /* ARPTable.swift in Sources */,
+				F79EBBB1A231BAB6942D2BCF /* Addresses.swift in Sources */,
+				7547C92E50B80417F5FD2E01 /* ContentView.swift in Sources */,
+				585D2ABF5E453AACC8691DEE /* DHCPListener.swift in Sources */,
+				AC7263DAAC8D49975A95B77C /* DNSMessage.swift in Sources */,
+				5AFD787ABE8456C1A2EA5286 /* Device.swift in Sources */,
+				9C80E9B13D1BB3641FCADAEC /* DeviceCatalog.swift in Sources */,
+				FE7B8359ACB8671B5958D53E /* DeviceInspector.swift in Sources */,
+				4EB9DCB278868304A5A74BDC /* DeviceTable.swift in Sources */,
+				A95822C7C8049BCFBA555FEA /* LanScanApp.swift in Sources */,
+				26A8C0FA2F6246FE291F92B2 /* NameResolver.swift in Sources */,
+				6601554910544F7BDC91781F /* NeighborDiscovery.swift in Sources */,
+				1024C055E3C7D6EF567B94E6 /* NetworkInterface.swift in Sources */,
+				AAAA820E1E7B05E856D24C24 /* NetworkScanner.swift in Sources */,
+				40D9675CEC2DCAA8E04F382E /* Pinger.swift in Sources */,
+				6DC0AF95AC6E569495340427 /* SSDP.swift in Sources */,
+				4E36E4FAC1F559F458AA15E2 /* ScanModel.swift in Sources */,
+				D8E877847F268C9074DB0DD6 /* ScanOptionsView.swift in Sources */,
+				F134C5BFB0D8781103EC453F /* ScanStatusOverlay.swift in Sources */,
+				B4F5856D34F0776A275669E9 /* SettingsView.swift in Sources */,
+				F77FA67983EB7472DACBEBC9 /* SidebarView.swift in Sources */,
+				E640A36B9AFDA232F17024F2 /* Sockets.swift in Sources */,
+				112FDCEEAE405280489F4A58 /* VendorDatabase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2389123021057FD5E7FA9DEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		54E0D6F8F4EAFED9A31AB6A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		777E755686A97968C7425949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = LanScan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.valeryburtsev.LanScan;
+				PRODUCT_NAME = LanScan;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9C32991AF2265EC36C4B21CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = LanScan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.valeryburtsev.LanScan;
+				PRODUCT_NAME = LanScan;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		151FDCB582DB24274E50C3B6 /* Build configuration list for PBXNativeTarget "LanScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C32991AF2265EC36C4B21CC /* Debug */,
+				777E755686A97968C7425949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DD2B608AF42852891467E0A4 /* Build configuration list for PBXProject "LanScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2389123021057FD5E7FA9DEE /* Debug */,
+				54E0D6F8F4EAFED9A31AB6A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12208C45F19E5904D7FB7793 /* Project object */;
+}
